@@ -1,0 +1,159 @@
+/* dropdown styling */
+.dropdown>.dropdown-menu{
+	top:200%;
+	transition: 0.3s all ease-in-out;
+}
+.dropdown:hover>.dropdown-menu{
+	display: block;
+	top: 100%;
+}
+
+.dropdown>.dropdown-toggle:active{
+	/*without this clicking will make it sticky*/
+	pointer-events: none;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(150, 34, 26,0.7);
+    z-index: 2;
+    cursor: pointer;
+    transition: opacity 1s;
+    
+  }
+
+.overlaylogo{
+    max-width: 100%;
+    width: 40%;
+    height: auto;
+    position: relative;
+    left: 30%;
+    top: 40%;
+
+  
+   
+}
+.wrapper{
+  width: 100%; 
+  height: auto;
+   overflow: hidden;
+  position: relative;
+  top:0px;
+  padding-bottom:100px;
+  }
+
+
+.item{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
+}
+.tint{
+  width:100%;
+  height:100%;
+  background-color:black;
+  opacity: .5;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  position: absolute;
+
+}
+
+.carousel-caption{
+  font-family: 'Overpass', sans-serif;
+  width: 30%;
+  z-index: 999;
+  top: 150px;
+  left: 50px;
+  
+}
+.carousel-caption h2{
+  font-size: 100px;
+}
+.carousel-caption h3{
+  font-size: 30px;
+}
+
+.owl-nav div{
+  width:50px;
+  
+}
+.nxtBtn img{
+
+  
+  width:100%;
+}
+.prvBtn img{
+
+  
+  width:100%;
+  position: relative;
+  left: 0px;
+  bottom: 350px;
+  z-index: 100;
+}
+.nxtBtn img{
+
+
+  width:100%;
+  position: relative;
+  left: 1470px;
+  bottom: 400px;
+  z-index: 101;
+}
+
+
+
+  /* =====================================transparent navbar======================== */
+
+  .nav{
+  height: 70px;
+  background: transparent;
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+}
+
+.logo {
+  color: #fff;
+  padding: 20px;
+  transition: all ease .5s;
+}
+
+.hero {
+  height: 100px;
+  width: 100%;
+  background-size: cover;
+  background-position: center; 
+  box-shadow: 10px 10px 5px grey;
+  position: relative;
+}
+
+.nav.shrink {
+  height: 100px;
+  transition: all ease .5s;
+  background-color:#a30000; // Change background to black on scroll
+}
+
+.nav.shrink.logo {
+  padding: 10px;
+  transition: all ease .5s;
+}
+
+      .custom-toggler .navbar-toggler-icon { 
+            background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+        } 
